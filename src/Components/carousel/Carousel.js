@@ -10,13 +10,13 @@ function CarouselEffect() {
       <Carousel 
         autoPlay={true}
         infiniteLoop={true}
-        showIndicators={true}
+        showIndicators={false}
         showThumbs={false}
       >
         {
           img.map((imageItemLink, index) => {
             // Assuming imageItemLink is just a string (URL).
-            return <img key={index} src={imageItemLink} alt={`Carousel image ${index + 1}`} />;
+            return <img key={index} src={imageItemLink} alt={`Carousel image ${index + 1}`}/>;
           })
         }
       </Carousel>
